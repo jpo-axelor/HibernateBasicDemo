@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+repositories {
+	mavenCentral()
+	jcenter()
+	mavenLocal()
+}
+
+
+dependencies {
+	implementation 'org.hibernate:hibernate-core:5.3.2.Final'
+	implementation 'org.postgresql:postgresql:42.2.2'
+}
+
+application {
+    mainClass = 'com.axelor.demo.app.App'
+}
